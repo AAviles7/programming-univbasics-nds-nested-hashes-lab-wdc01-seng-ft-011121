@@ -20,14 +20,22 @@ def literal_aoh
   # held in the constants
   
   ans = Array.new
-  ans.push()
+  ans.push(DON_G)
+  ans.push(JOELLE_VD)
+  ans.push(PAT_M)
+  ans.push(KATE_G)
+  ans.push(BRUCE_G)
+  return ans
   
 end
 
 def aoh_lookup(aoh, row, key)
+  return aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
+  aoh[row][key] = new_value
+  return aoh
 end
